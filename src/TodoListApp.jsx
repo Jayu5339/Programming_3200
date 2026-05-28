@@ -57,7 +57,7 @@ function TodoListApp() {
     // todos를 하나씩 꺼내어 todo, todo.id === id
     setTodos((todos) =>
       todos.filter((todo) => todo.id !== id)
-    )
+    ) 
   }
   function editTodo(id, newText) {
     //todos 하나씩 꺼내어 todo. id가 같으면 text: newText

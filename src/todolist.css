@@ -60,3 +60,8 @@
 }
 /* A > B  : A 바로 아래 자식 B
 A B    : A 아래 자손 B */
+
+.todo__date {
+    font-size: 0.75em;
+    color: #aaa;
+}

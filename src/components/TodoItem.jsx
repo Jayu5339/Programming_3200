@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Checkbox from "./Checkbox.jsx"
 import Button from "./Button.jsx"
+import TodoDate from "./TodoDate.jsx"
 
 export default function TodoItem({ todo, toggleTodo, deleteTodo, editTodo }) {
     const [isEditing, setIsEditing] = useState(false);  //수정중인지 아닌지
@@ -27,6 +28,7 @@ export default function TodoItem({ todo, toggleTodo, deleteTodo, editTodo }) {
                     checked={todo.isCompleted}
                     onChange={() => toggleTodo(todo.id)}
                 >{todo.text}</Checkbox>
+                
             }
             {isEditing &&
                 <input
@@ -38,6 +40,9 @@ export default function TodoItem({ todo, toggleTodo, deleteTodo, editTodo }) {
                     onKeyDown={(event) => { if (event.key === "Enter") handleEditClick() }}
                     autoFocus
                 />
+            }
+            <TodoDate id={todo.id} /> {
+
             }
             <Button
                 className="todo__button todo__button--edit"
