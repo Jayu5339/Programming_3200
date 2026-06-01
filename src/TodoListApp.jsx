@@ -67,10 +67,13 @@ function TodoListApp() {
       )
     )
   }
+  function deleteAllTodos() {
+    setTodos([]);
+  }
   return (
     <div className="todo">
       <TodoHeader />
-      <TodoAdder addTodo={addTodo} />
+      <TodoAdder addTodo={addTodo} deleteAllTodos={deleteAllTodos} />
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} editTodo={editTodo}/>
     </div>
   )

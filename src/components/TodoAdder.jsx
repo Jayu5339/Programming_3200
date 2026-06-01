@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Button from './Button.jsx'
 
-export default function TodoAdder({ addTodo }) {    //const { addTodo } = props
+export default function TodoAdder({ addTodo, deleteAllTodos }) {    //const { addTodo } = props
     const [inputTodo, setInputTodo] = useState('');
     const handleSubmit = (event) => {
         event.preventDefault(); //기본 동작 막자
@@ -20,6 +20,7 @@ export default function TodoAdder({ addTodo }) {    //const { addTodo } = props
                 onChange={(event) => setInputTodo(event.target.value)}
             />
             <Button type="submit" className="todo__button todo__button--add">Add</Button>
+            <Button type="button" className="todo__button todo__button--delete-all" onClick={deleteAllTodos}>Delete</Button>
         </form>
     )
 }

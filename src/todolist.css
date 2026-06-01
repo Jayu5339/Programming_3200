@@ -29,6 +29,7 @@
 }
 .todo__button--add {
     background-color: #4984e4;
+    margin-right: 8px;
 }
 .todo__item {
     display: flex;
@@ -54,7 +55,7 @@
 .todo__button--delete {
     font-size: 0.8em;
 }
-.todo__item--complete .todo__label  {
+.todo__item--complete .todo__label {
     text-decoration: line-through;
     color: #999;
 }
@@ -64,4 +65,7 @@ A B    : A 아래 자손 B */
 .todo__date {
     font-size: 0.75em;
     color: #aaa;
+}
+.todo__button--delete--all {
+    background-color: #e44949;
 }
