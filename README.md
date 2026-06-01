@@ -40,3 +40,4 @@ npm create vite@latest .
   ```
 - `useNavigate()`
 - 3212 임지유  1-1	날짜 표시?	★	Date, 컴포넌트 렌더링
+- 3212 임지유  3-3  전체 삭제 ★ 배열 초기화, confirm modal
